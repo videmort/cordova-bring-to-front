@@ -16,6 +16,10 @@
 				<param name="android-package" value="in.lucasdup.bringtofront.BringToFront" />
 			</feature>
 		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+		      <uses-permission android:name="android.permission.WAKE_LOCK" />
+		      <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+		</config-file>
 		<js-module src="www/bring-to-front.js" name="BringToFront">
 			<clobbers target="plugins.bringtofront" />
 		</js-module>
